@@ -1,5 +1,4 @@
-//import axios from "axios";
-const axios = require("axios").default;
+import axios from "axios";
 
 const ROOT_URL = "https://www.reddit.com";
 
@@ -18,4 +17,4 @@ const Reddit = {
   getPopularPosts: () => axios.get("/r/popular.json"),
 };
 
-module.exports = Reddit;
+export default Reddit;
